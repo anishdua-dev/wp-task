@@ -1,10 +1,10 @@
 <div id="msg"></div>
 <form name="booking_form" id="booking_form" method="post">
-    <input type="hidden" name="action" value="send_booking_form_action">
-    <input type="text" name="first_name" placeholder="First name">
-    <input type="text" name="last_name" placeholder="Last name">
-    <input type="text" name="email" placeholder="Email">
-    <input type="text" name="phone" placeholder="Phone">
+    <input type="hidden" name="action" value="send_booking_form_action" required>
+    <input type="text" name="first_name" placeholder="First name" required>
+    <input type="text" name="last_name" placeholder="Last name" required>
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="text" name="phone" placeholder="Phone" required>
     <select name="vehicle_type" id="vehicle_type">
         <option value="">--Please choose vehicle Type--</option>
     <?php foreach($vehicle_taxonomies as $vehicle_type){ ?>
